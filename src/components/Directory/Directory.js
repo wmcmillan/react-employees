@@ -54,6 +54,7 @@ export default class DirectoryContainer extends Component {
         }
     }
 
+    
     handleFormSubmit = event => {
         event.preventDefault();
         const filteredArray = this.state.result.filter(
