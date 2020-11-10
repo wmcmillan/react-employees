@@ -1,0 +1,7 @@
+.jumbotron {
+    background-color: grey !important;
+}
+
+.lead, .display-4 {
+    color: white;
+}
