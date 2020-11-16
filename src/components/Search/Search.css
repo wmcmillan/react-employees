@@ -1,0 +1,28 @@
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto !important;
+}
+
+form {
+    margin: 0 auto;
+}
+
+#see-all {
+    margin-left: 1rem;
+}
+
+#search, #searchbtn {
+    margin-left: 0.5rem;
+}
+
+#searchbtn:hover {
+    background-color: rgb(143,10,10);
+    border: 1px solid rgb(143,10,10);
+}
+
+@media only screen and (min-width: 875px) {
+    .form-group {
+        max-width: 50%;
+    }
+}

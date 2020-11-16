@@ -1,21 +1,30 @@
 import React from 'react';
-import './style.css';
+import "./Search.css";
 
-export default function Search(props) {
+
+function Search(props) {
     return (
-        <form onSubmit={props.handleFormSubmit} className="form-inline search-form">
+        <form>
             <div className="form-group">
                 <input
-                    value={props.value}
                     onChange={props.handleInputChange}
+                    value={props.search}
                     name="search"
                     type="text"
                     className="form-control"
-                    placeholder="Search for Name"
+                    placeholder="Search by Name"
                     id="search"
+                    list="name-list"
                 />
-                <button className="btn btn-dark">Search</button>
+                <datalist id="name-list">
+                    {props.list}
+                </datalist>
+                <button onClick={props.handleFormSubmit} className="btn btn-danger" id="searchbtn">
+                    Search
+                </button>
             </div>
         </form>
     )
 }
+
+export default Search

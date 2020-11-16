@@ -1,3 +1,36 @@
-body {
-    color: red;
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown_search {
+    margin-top: 1rem;
+}
+
+.fade-div {
+    height: 2rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        /* rgba(37,37,37,0.61), */
+        #111
+    )
+}
+
+.table-container {
+    padding: 0 1rem;
+}
+
+th {
+    background-color: rgb(63,63,63);
+    border: 1px solid white;
+}
+
+td, th {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(197,198,201,0.1);
 }
